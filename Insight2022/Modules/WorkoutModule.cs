@@ -14,6 +14,7 @@ namespace Insight2022.Modules
         {
             //GET THE WORKOUT'S BY NAME
             //
+            /// this is a test comment
             app.MapGet("/workout/{name}", async (HttpContext context, IWorkoutDb workout) =>
             {
                 if (!context.Request.RouteValues.TryGetValue("name", out var name))
